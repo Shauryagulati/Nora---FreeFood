@@ -1,0 +1,44 @@
+.nora-highlight-high {
+  border-left: 4px solid #4caf50 !important;
+  transition: border-color 0.3s ease;
+}
+
+.nora-highlight-medium {
+  border-left: 4px solid #9acd32 !important;
+  transition: border-color 0.3s ease;
+}
+
+.nora-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  z-index: 100;
+  pointer-events: none;
+  animation: nora-fade-in 0.3s ease;
+}
+
+.nora-badge-high {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.nora-badge-medium {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+@keyframes nora-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
